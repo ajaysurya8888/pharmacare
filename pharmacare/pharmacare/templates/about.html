@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>pharmacare</title>
+  </head>
+  <body>
+
+    <header class="site-header" >
+
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a  class="navbar-brand" href="/">pharmacare</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-link" href="{{ url_for('bill') }}">Bill Generation</a>
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              <a class="nav-link" href="{{ url_for('addItem') }}">add Item</a>
+              <a class="nav-link" href="{{ url_for('expired') }}">expiring Soon</a>
+              <a class="nav-link" href="{{ url_for('outOfStock') }}">outOfStock</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+              <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header><br><br><br><br>
+    <div class="container">
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+     <img src="https://image.shutterstock.com/image-photo/pharmacy-background-on-black-table-260nw-376019317.jpg" class="rounded" alt="medicine" width="500" height="2322">
+   </div>
+   <div class="col-md-auto">-->
+
+   <div class="jumbotron text-center  style="margin-bottom:0">
+     <h1>pharmacare <h1>
+       <p class="text-muted">your health is our priority</p>
+   </div><br><br>
+     <h1 class=" text-left">pharmacare is all about caring mankind</h1>
+     <br><br>
+     <h5 class="mb-12 d-block p-2">we provide all kind of medicines.In this project we can make bill for medicines.We can also know the medicines which are going to expire and the medicines which are out of stock.This page is purely about this project.</h5>
+
+      <div  class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.financialexpress.com/2020/03/1-578.jpg" alt="m1" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="https://epsilon.aeon.co/images/afef287f-dd6f-4a6a-b8a6-4f0a09330657/idea_sized-kendal-l4ikccachoc-unsplash.jpg" alt="m2" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.dnaindia.com/sites/default/files/styles/half/public/2019/06/18/837752-medicines-istock.jpg?itok=DTVK9OtN" alt="m3" width="1100" height="500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next"  href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div><br><br>
+  <p>  When your kids are sick, all you want to do is help them feel better. But with all of the different products out there, it can be difficult to know what kind of medicine to give them, how much they need, and how often to give it to them.
+    Here are some basic guidelines to help you get started:</p>
+
+    <h5 class="mb-12">Read package instructions carefully.</h5>
+    <p>Not all medicines should be given at the same hourly intervals or in the same amounts. Follow the package instructions and give the appropriate amount of medicine that is labeled for your child at the proper interval.
+    </p>
+    <h5 class="mb-12">Use the proper measuring device.</h5>
+    <p>Always use the dropper, dosage cup, or other measuring device that comes with the medicine. Different medicines have different concentrations, so, using the medicine cup from one product to measure the dose of another product won’t always be accurate. Keep the product’s measuring device with it all the time, so you’ll be able to measure the proper dose right there. If you no longer have your measuring device, ask your pharmacist for a substitute. And be sure to wash the measuring device after use.
+    </p>
+    <h5 class="mb-12">Ensure the medicine is age-appropriate.</h5>
+    <p>Make sure you're giving the right formula for your child's age and/or weight. Children’s medicines can be specially formulated, so you might need to change formulas as they grow older. Always use medicine as directed, and contact your physician if you have more questions.
+    </p>
+    <h5 class="mb-12">Don’t be afraid to ask questions.</h5>
+<p>
+    If you have any questions about which form or dosage is most appropriate for your child, don't hesitate to talk to your pediatrician. If your child uses more than one medication or prescription, your pediatrician or pharmacist can be your best friend. He or she can help you find the proper medicine, dosage, and frequency of use for any product—whether it’s prescription or over-the-counter.
+</p>
+    <h5 class="mb-12">Don’t abuse medicine.Don’t be afraid to ask questions.</h5>
+
+  <p>  When your child isn’t feeling well, it’s hard for him to get a good night’s sleep. And more often than not, that means that you, the parent, aren’t going to get much shut-eye, either. However, it’s important to follow the dosing instructions on a label.</strong> Never use a cold medicine to make your child sleep.<strong>
+</p>
+<h5 class="mb-12"></h5>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>Copyright &copy; pharmacare .All rights reserved 2020 &reg;</small>
+  </div>
+</footer>
+</html>
